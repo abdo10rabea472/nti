@@ -103,7 +103,7 @@ document.addEventListener('DOMContentLoaded', () => {
         counter.textContent = cartItems.length;
       } else {
         alert("Please sign in to add items to the cart.");
-        window.location.href= '../../../our final task//login&shop$ligin/login.html'; // Redirect to sign-in page
+        window.location.href = '../login&shop$ligin/login.html'; // Redirect to sign-in page
       }
     });
   });
