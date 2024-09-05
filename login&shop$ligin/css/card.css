@@ -1,0 +1,183 @@
+/* أساسيات التصميم */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px auto;
+    max-width: 1200px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  #cart-table th, #cart-table td {
+    border: 1px solid #e0e0e0;
+    padding: 12px;
+    text-align: center;
+  }
+  
+  #cart-table th {
+    background-color: #333;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  #cart-table td img {
+    max-width: 60px;
+    max-height: 60px;
+    border-radius: 5px;
+  }
+  
+  #cart-table .quantity-input {
+    width: 60px;
+    padding: 8px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fafafa;
+  }
+  
+  .remove-item {
+    background-color: #ff5c5c;
+    color: #fff;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .remove-item:hover {
+    background-color: #ff0000;
+  }
+  
+  #coupon-section {
+    margin: 20px auto;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  #coupon-code {
+    padding: 10px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  #apply-coupon {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  #apply-coupon:hover {
+    background-color: #218838;
+  }
+  
+  #print-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin: 20px auto;
+    display: block;
+  }
+  
+  #print-button:hover {
+    background-color: #0056b3;
+  }
+  
+  #cart-totals {
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  #cart-totals p {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  #cart-totals span {
+    font-weight: bold;
+    color: #000;
+  }
+  
+  #cart-totals #cart-total {
+    font-size: 18px;
+    color: #e60000;
+  }
+  
+  /* تصميم متجاوب */
+  @media (max-width: 768px) {
+    #cart-table th, #cart-table td {
+      font-size: 14px;
+      padding: 8px;
+    }
+  
+    #cart-table td img {
+      max-width: 50px;
+      max-height: 50px;
+    }
+  
+    #coupon-code {
+      width: 180px;
+    }
+  
+    #apply-coupon, #print-button {
+      font-size: 12px;
+      padding: 8px 16px;
+    }
+  
+    #cart-totals {
+      max-width: 100%;
+      padding: 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    #cart-table th, #cart-table td {
+      font-size: 12px;
+      padding: 6px;
+    }
+  
+    #cart-table td img {
+      max-width: 40px;
+      max-height: 40px;
+    }
+  
+    #coupon-code {
+      width: 150px;
+    }
+  
+    #apply-coupon, #print-button {
+      font-size: 10px;
+      padding: 6px 12px;
+    }
+  
+    #cart-totals {
+      padding: 5px;
+    }
+  }
+  

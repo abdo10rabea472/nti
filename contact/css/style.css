@@ -1,0 +1,550 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+  --primary-color: #088178;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Spartan', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1 {
+  font-size: 3.125rem;
+  line-height: 4rem;
+  color: #222;
+}
+
+h2 {
+  font-size: 2.875rem;
+  line-height: 3.375rem;
+  color: #222;
+}
+
+h4 {
+  font-size: 1.5rem;
+  color: #222;
+}
+
+h6 {
+  font-weight: 700;
+  font-size: 12px;
+}
+
+p {
+  font-size: 16px;
+  color: #465b52;
+  margin: 15px 0 20px 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.section-p1 {
+  padding: 40px 80px;
+}
+
+.section-m1 {
+  margin: 40px 0;
+}
+/*  */
+/* النمط الأساسي للأزرار */
+button.normal {
+    width: 100px; /* العرض الافتراضي للزرار */
+    padding: 15px 20px; /* مساحة داخلية للأزرار */
+    font-size: 16px; /* حجم النص داخل الأزرار */
+    font-weight: 600; /* وزن الخط داخل الأزرار */
+    color: #fff; /* لون النص */
+    background-color: #088178; /* لون الخلفية */
+    border: none; /* إزالة الحواف */
+    border-radius: 5px; /* إضافة حواف مستديرة */
+    cursor: pointer; /* تغيير مؤشر الماوس عند التمرير */
+    transition: all 0.5s ease-in-out; /* انتقال سلس لتغيير اللون */
+    overflow: hidden; /* منع النص من الخروج خارج حدود الزر أثناء الأنيميشن */
+    
+}
+
+/* التأثير عند تمرير الماوس */
+button.normal:hover {
+    width: 100%; /* تمدد الزرار لملء الحاوية */
+}
+
+/* التأثير عند إزالة الماوس */
+button.normal:not(:hover) {
+    animation: shrink 2s forwards; /* تطبيق الأنيميشن للعودة للحجم الأصلي */
+}
+
+/* تعريف الأنيميشن للتقلص */
+@keyframes shrink {
+    from {
+        width: 100%; /* العرض الكامل */
+    }
+    to {
+        width: 100px; /* العودة إلى العرض الأصلي */
+    }
+}
+/* التأثير عند تمرير الماوس */
+button.normal:hover {
+    animation: expand 2s forwards; /* تطبيق الأنيميشن عند تمرير الماوس */
+}
+
+/* تعريف الأنيميشن */
+@keyframes expand {
+    from {
+        width: 100px; /* العرض الأصلي */
+    }
+    to {
+        width: 100%; /* العرض بعد التمدد */
+    }
+}
+
+button.white {
+  font-size: 13px;
+  font-weight: 600;
+  padding: 11px 18px;
+  color: #ffffff;
+  background-color: transparent;
+  cursor: pointer;
+  border: 1px solid white;
+  outline: none;
+  transition: all 0.3s ease;
+}/* النمط الأساسي للرابط */
+.logo {
+    font-size: 2rem; /* حجم النص */
+    font-weight: 700; /* سمك النص */
+    color: #333; /* لون النص الأساسي */
+    text-transform: uppercase; /* تحويل النص إلى حروف كبيرة */
+    letter-spacing: 2px; /* المسافة بين الحروف */
+    text-decoration: none; /* إزالة الخط السفلي */
+    position: relative; /* لتحكم أفضل بالعناصر الداخلية */
+    transition: color 0.3s ease-in-out; /* حركة سلسة لتغيير اللون */
+}
+
+/* إضافة تأثير سفلي */
+
+/* Header section */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 30px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  transition: .5s;
+
+}
+
+#header img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar li {
+  list-style: none;
+  padding: 0 20px;
+  position: relative;
+}
+.respons{
+  font-size: 30px;
+  display: none;
+  cursor: pointer;
+}
+@media (max-width:477px) {
+
+  .navbar li {
+    padding: 0 8px;
+  }
+
+}
+
+.navbar li a {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  transition: all 0.3s ease;
+  display: inline-block;
+  position: relative;
+}
+.navbar li a span{
+    position: absolute;
+    font-size: 14px;
+    left: 20px;
+    color: red;
+}
+@media (min-width:992px){
+  .mynav{
+    animation: none !important;
+  }
+  .sm-banner .banner-box{
+    margin-bottom: 10px !important;
+  }
+
+}
+@media(max-width:991px){
+  .header{
+    position: relative;
+  }
+  .mynav{
+    position: absolute;
+    right: 5%;
+    top: 100%;
+    width: 90%;
+    display: none;
+    overflow: hidden;
+  }
+  .navbar{
+    background:#0779e4;
+    width: 100%;
+    height: 300px;
+  }
+  .navbar li{
+    display: block;
+    width: 100%;
+  }
+
+  .navbar li a::after{
+    display: none;
+  }
+  .respons{
+    display: block;
+  }
+  #product1 .pro-container .pro {
+    width: 48% !important;
+  }
+
+  .navbar li a:hover,
+  .navbar li a.active {
+    color: #FFF !important;
+}
+
+}
+@media (max-width:767px){
+  .feature .fe-box{
+    width: 100% !important;
+  }
+  #product1 .pro-container .pro {
+    width: 100% !important;
+  }
+  .sm-banner .banner-box{
+    width: 100% !important;
+  }
+
+}
+@keyframes disp {
+  0%{
+      height: 0px;
+      visibility:0 ;
+  }
+  100%{
+      height: 300px;
+      visibility: visible;
+  }
+}
+@keyframes hide {
+  0%{
+      height: 300px;
+      visibility:visible ;
+  }
+  100%{
+      height:0px;
+      visibility:hidden;
+  }
+}
+@media (max-width:477px) {
+  .navbar li a {
+    font-size: 16px;
+  }
+}
+
+.navbar li a:hover,
+.navbar li a.active {
+  color: var(--primary-color);
+}
+
+.navbar li a::after{
+  content: "";
+  content: "";
+  position: absolute;
+  left: 15%;
+  bottom: 0;
+  width: 0px;
+  height: 2px;
+  background-color:#088178;
+  transition: .5s;
+} 
+.navbar li a:hover::after{
+  width: 70%;
+}
+.head-cart {
+  font-size: 1.3rem;
+
+}
+
+.mobile {
+  display: none;
+}
+
+
+#contact-ditails {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#contact-ditails .details {
+  width: 40%;
+  margin-top: 30px;
+}
+
+#contact-ditails .details span,
+#form-ditails form span {
+  font-size: 12px;
+}
+
+#contact-ditails .details h2,
+#form-ditails form h2 {
+  font-size: 26px;
+  line-height: 35px;
+  padding: 20px 0;
+}
+
+#contact-ditails .details h3 {
+  font-size: 16px;
+  padding-bottom: 15px;
+}
+
+#contact-ditails .details li {
+  list-style: none;
+  display: flex;
+  padding: 10px 0;
+  color: #088178;
+}
+
+#contact-ditails .details li i {
+  font-size: 14px;
+  padding-right: 22px;
+}
+
+#contact-ditails .details li i:hover{
+    font-size: 16px;
+}
+
+#contact-ditails .details li p {
+  margin: 0;
+  font-size: 14px;
+}
+
+#contact-ditails .map {
+  width: 55%;
+  height: 400px;
+  margin-top: 70px;
+}
+
+#contact-ditails .map iframe {
+  width: 100%;
+  height: 100%;
+}
+
+#form-ditails form {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 10px;
+}
+
+#form-ditails form input,
+#form-ditails form textarea {
+  width: 100%;
+  padding: 12px 15px;
+  outline: none;
+  margin-bottom: 20px;
+  border: 1px solid #e1e1e1;
+}
+
+#form-ditails form button {
+  background-color: #4481eb;
+  color: #fff;
+}
+
+.form-b {
+  padding: 20px;
+  width: 900px;
+  margin-left: 50px;
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+}
+
+
+/* دعم متصفحات WebKit (مثل Chrome و Safari) */
+#form-ditails form input:focus::-webkit-input-placeholder,
+#form-ditails form textarea:focus::-webkit-input-placeholder {
+    opacity: 0;
+}
+
+/* دعم متصفحات Firefox القديمة */
+#form-ditails form input:focus::-moz-placeholder,
+#form-ditails form textarea:focus::-moz-placeholder {
+    opacity: 0;
+}
+
+/* دعم متصفحات Internet Explorer */
+#form-ditails form input:focus:-ms-input-placeholder,
+#form-ditails form textarea:focus:-ms-input-placeholder {
+    opacity: 0;
+}
+/* تأثير النيون */
+#form-ditails form input:focus,
+#form-ditails form textarea:focus {
+    outline: none; /* لإزالة الـ outline الافتراضي */
+    border: 1px solid #088178; /* تغيير لون البوردر عند الفوكس */
+    box-shadow: 0 0 5px #088178, 0 0 5px #088178; /* تأثير النيون */
+    transition: all 0.3s ease-in-out; /* حركة سلسة للتأثير */
+}
+
+/* التأثير العادي عند عدم الفوكس */
+#form-ditails form input,
+#form-ditails form textarea {
+    border: 1px solid #e1e1e1;
+    transition: all 0.3s ease-in-out; /* حركة سلسة عند الانتقال */
+}
+/* تأثير النيون */
+#form-ditails form input:focus,
+#form-ditails form textarea:focus {
+    outline: none; /* لإزالة الـ outline الافتراضي */
+    border: 1px solid #088178; /* تغيير لون البوردر عند الفوكس */
+    box-shadow: 0 0 5px #088178, 0 0 5px #088178; /* تأثير النيون */
+    transition: all 0.3s ease-in-out; /* حركة سلسة للتأثير */
+}
+
+/* التأثير العادي عند عدم الفوكس */
+#form-ditails form input,
+#form-ditails form textarea {
+    border: 1px solid #e1e1e1;
+    transition: all 0.3s ease-in-out; /* حركة سلسة عند الانتقال */
+}
+
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+  .section-p1 {
+    padding: 30px 40px;
+  }
+
+  #header {
+    padding: 15px 40px;
+  }
+  .navbar{
+    background-color: #0779e4;
+    display: flex;
+    flex-direction: column;
+  }
+  #navbar li {
+    margin-bottom: 20px;
+  }
+  .form-b {
+    width: 700px;
+    margin-left: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+  }
+
+  h2 {
+    font-size: 2.25rem;
+    line-height: 3rem;
+  }
+
+  .section-p1 {
+    padding: 20px 20px;
+  }
+
+  #header {
+    display: flex;
+    padding: 10px 20px;
+  }
+
+  #contact-ditails {
+    flex-direction: column;
+  }
+
+  #contact-ditails .details,
+  #form-ditails form {
+    width: 100%;
+  }
+
+  .form-b {
+    width: 90%;
+    margin-left: 0;
+  }
+
+  #contact-ditails .map {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+    line-height: 2.25rem;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  #navbar li {
+    padding: 0 8px;
+  }
+
+  #navbar li a {
+    font-size: 14px;
+  }
+
+  button.normal {
+    font-size: 12px;
+    padding: 10px 20px;
+  }
+
+  button.white {
+    font-size: 11px;
+    padding: 8px 16px;
+  }
+
+  #contact-ditails .map {
+    height: 300px;
+  }
+
+  #header img {
+    width: 40px;
+    height: 40px;
+  }
+}

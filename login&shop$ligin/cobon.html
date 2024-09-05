@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discount Page</title>
+    <link rel="stylesheet" href="cobine.css">
+</head>
+<body>
+    <div class="discount-container">
+        <h1>Generate Discount Coupon</h1>
+        <div class="coupon-form">
+            <label for="discount-percentage">Enter Discount Percentage:</label>
+            <input type="number" id="discount-percentage" placeholder="Enter percentage" min="1" max="100">
+            <button id="generate-coupon">Generate Coupon</button>
+        </div>
+        <div id="coupon-details" class="hidden">
+            <h2>Coupon Details</h2>
+            <p>Coupon Code: <span id="coupon-code"></span></p>
+            <p>Discount Percentage: <span id="coupon-percentage"></span>%</p>
+            <button id="copy-coupon">Copy Coupon Code</button>
+
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.6.0/jspdf.umd.min.js"></script>
+
+    <script src="generate-coupon.js"></script>
+</body>
+</html>
