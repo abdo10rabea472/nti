@@ -7,10 +7,32 @@ window.onscroll=function (){
         header.style.background=null;
     }
 }
-document.querySelector(".shop-1").addEventListener('click',function(){
-  window.location.href='./login&shop$ligin/shop.html'
-})
+
 // ================
+function assignUniqueIds(className) {
+    // الحصول على جميع العناصر التي تحتوي على الكلاس المحدد
+    const elements = document.querySelectorAll(`.${className}`);
+
+    // التأكد من وجود عناصر
+    if (elements.length === 0) {
+        console.log(`No elements found with class: ${className}`);
+        return;
+    }
+
+    // تعيين معرّف فريد لكل عنصر
+    elements.forEach((element, index) => {
+        // إنشاء معرّف فريد بناءً على الفهرس
+        const uniqueId = `${className}-${index + 1}`;
+        
+        // تعيين المعرّف للعنصر
+        element.id = uniqueId;
+    });
+
+    console.log(`Assigned IDs to elements with class: ${className}`);
+}
+
+// مثال على استخدام الدالة
+assignUniqueIds('pro');
 // ================
 
 
