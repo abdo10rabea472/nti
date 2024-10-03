@@ -1,0 +1,158 @@
+// هنا تستدعى بيانات amount
+
+[
+    {
+        "id": 17,
+        "subscriberName": "\u0645\u062d\u0645\u062f",
+        "name": "\u0645\u062d\u0645\u062f",
+        "phoneNumber": "01068611111",
+        "subscriptionType": "{\"id\":1,\"type\":\"12 \u062d\u0635\u0647\",\"sessions\":\"12\",\"price\":\"500\",\"days\":\"30\"}",
+        "subscriptionDuration": "12",
+        "subscriptionStartDate": "2024-10-01",
+        "subscriptionEndDate": "2024-10-31",
+        "subscriptionCost": "450",
+        "remaining": "0",
+        "coachName": "",
+        "username_player": "user_17",
+        "password_player": "1",
+        "email_player": "user_17@example.com",
+        "photo": "",
+        "total_paid": "450",
+        "installments": [
+            {
+                "amount": "0",
+                "date": "2024-10-01 12:27:16"
+            }
+        ],
+        "balance": 0,
+        "subscriptionReason": null,
+        "attendanceTime": "2024-09-28 13:05:44"
+    },
+    {
+        "id": 18,
+        "subscriberName": "\u0639\u0628\u062f\u0627\u0644\u0631\u062d\u0645\u0646 \u0631\u0628\u064a\u0639",
+        "name": "\u0639\u0628\u062f\u0627\u0644\u0631\u062d\u0645\u0646 \u0631\u0628\u064a\u0639",
+        "phoneNumber": "01068694941",
+        "subscriptionType": "{\"id\":2,\"type\":\"20 \u062d\u0635\u0647\",\"sessions\":\"20\",\"price\":\"500\"}",
+        "subscriptionDuration": "300",
+        "subscriptionStartDate": "2024-09-29",
+        "subscriptionEndDate": "2049-09-29",
+        "subscriptionCost": "500",
+        "remaining": "52",
+        "coachName": "",
+        "username_player": "user_18",
+        "password_player": "1",
+        "email_player": "user_18@example.com",
+        "photo": "",
+        "balance": 1000,
+        "total_paid": "448",
+        "installments": [
+            {
+                "amount": "448",
+                "date": "2024-09-28 13:13:56"
+            }
+        ],
+        "subscriptionReason": null,
+        "attendanceTime": "2024-09-29 23:15:00"
+    },
+    {
+        "id": 19,
+        "subscriberName": "\u0631\u0628\u064a\u0639",
+        "name": "\u0631\u0628\u064a\u0639",
+        "phoneNumber": "01068694941",
+        "subscriptionType": "{\"id\":3,\"type\":\"12 \\u062d\\u0635\\u0647\",\"sessions\":\"20\",\"price\":\"20\",\"days\":\"60\"}",
+        "subscriptionDuration": "20",
+        "subscriptionStartDate": "2024-10-01",
+        "subscriptionEndDate": "2024-11-30",
+        "subscriptionCost": "20",
+        "remaining": "0",
+        "coachName": "",
+        "username_player": "user_19",
+        "password_player": "9124fb56",
+        "email_player": "user_19@example.com",
+        "photo": "",
+        "total_paid": "20",
+        "installments": [
+            {
+                "amount": "20",
+                "date": "2024-10-01 12:25:03"
+            }
+        ],
+        "balance": 0
+    },
+    {
+        "id": 20,
+        "subscriberName": "0",
+        "name": "0",
+        "phoneNumber": "0",
+        "subscriptionType": "{\"id\":2,\"type\":\"20 \\u062d\\u0635\\u0647\",\"sessions\":\"20\",\"price\":\"500\",\"days\":\"20\"}",
+        "subscriptionDuration": "20",
+        "subscriptionStartDate": "2024-10-01",
+        "subscriptionEndDate": "2024-10-21",
+        "subscriptionCost": "500",
+        "remaining": "500",
+        "coachName": "",
+        "username_player": "user_20",
+        "password_player": "10e5b7e5",
+        "email_player": "user_20@example.com",
+        "photo": "",
+        "total_paid": "0",
+        "installments": [
+            {
+                "amount": "0",
+                "date": "2024-10-01 12:27:16"
+            }
+        ],
+        "balance": 0
+    },
+    {
+        "id": 21,
+        "subscriberName": "\u0639\u0628\u062f\u0627\u0644\u0631\u062d\u0645\u0646 \u0631\u0628\u064a\u0639",
+        "name": "\u0639\u0628\u062f\u0627\u0644\u0631\u062d\u0645\u0646 \u0631\u0628\u064a\u0639",
+        "phoneNumber": "1",
+        "subscriptionType": "{\"id\":1,\"type\":\"12 \\u062d\\u0635\\u0647\",\"sessions\":\"12\",\"price\":\"500\",\"days\":\"30\"}",
+        "subscriptionDuration": "12",
+        "subscriptionStartDate": "2024-10-03",
+        "subscriptionEndDate": "2024-11-02",
+        "subscriptionCost": "500",
+        "remaining": "0",
+        "coachName": "",
+        "username_player": "user_21",
+        "password_player": "67c813b6",
+        "email_player": "user_21@example.com",
+        "photo": "",
+        "total_paid": "500",
+        "installments": [
+            {
+                "amount": "500",
+                "date": "2024-10-03 15:03:09"
+            }
+        ],
+        "balance": 0
+    },
+    {
+        "id": 22,
+        "subscriberName": "\u0639\u0628\u062f\u0627\u0644\u0631\u062d\u0645\u0646 \u0631\u0628\u064a\u0639",
+        "name": "\u0639\u0628\u062f\u0627\u0644\u0631\u062d\u0645\u0646 \u0631\u0628\u064a\u0639",
+        "phoneNumber": "01068694941",
+        "subscriptionType": "{\"id\":1,\"type\":\"12 \\u062d\\u0635\\u0647\",\"sessions\":\"12\",\"price\":\"500\",\"days\":\"30\"}",
+        "subscriptionDuration": "12",
+        "subscriptionStartDate": "2024-10-03",
+        "subscriptionEndDate": "2024-11-02",
+        "subscriptionCost": "500",
+        "remaining": "-59500",
+        "coachName": "",
+        "username_player": "user_22",
+        "password_player": "fdac8d11",
+        "email_player": "user_22@example.com",
+        "photo": "",
+        "total_paid": "60000",
+        "installments": [
+            {
+                "amount": "60000",
+                "date": "2024-10-04 00:17:57"
+            }
+        ],
+        "balance": 0
+    }
+]
